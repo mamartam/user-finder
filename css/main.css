@@ -1,0 +1,150 @@
+/* variables */
+:root {
+  --body-bg: #1b211a;
+  --tex-color: #ebd5ab;
+  --input-bg: #628141;
+}
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+li {
+  list-style-type: none;
+}
+/* base styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: var(--body-bg);
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+main {
+  width: 20em;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-wrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--input-bg);
+  margin-bottom: 4em;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.input-wrapper:focus-visible {
+  outline: 1px solid var(--input-bg);
+  outline-offset: 2px;
+}
+.input-wrapper:focus-visible {
+  outline: 1px solid var(--input-bg);
+  outline-offset: 2px;
+}
+.input {
+  width: 0;
+  height: 3.5em;
+  border: none;
+  color: var(--tex-color);
+  border: none;
+  background-color: transparent;
+  transition: width 0.3s linear;
+  font-size: 1em;
+  font-family: "Montserrat";
+}
+.input-wrapper .input-img {
+  cursor: pointer;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+}
+.active {
+  width: 15em;
+  height: 3.5em;
+  border: none;
+  padding: 0.5em;
+  color: var(--tex-color);
+  background-color: transparent;
+}
+.list-item {
+  text-align: center;
+  margin-bottom: 1em;
+  color: var(--tex-color);
+  font-size: 1em;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  main {
+    width: 20em;
+    margin: 2em;
+  }
+  .input-wrapper {
+    margin-bottom: 4em;
+    padding: 0 15px;
+  }
+  .input {
+    width: 0;
+    height: 3.5em;
+    font-size: 1em;
+  }
+  .input-wrapper .input-img {
+    width: 2em;
+    height: 2em;
+  }
+  .active {
+    width: 20em;
+    height: 3.5em;
+    padding: 1em;
+  }
+  .list-item {
+    margin-bottom: 1em;
+    font-size: 1em;
+  }
+}
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  main {
+    width: 25em;
+    margin: 2em;
+  }
+  .input-wrapper {
+    margin-bottom: 4em;
+    padding: 0 15px;
+  }
+  .input {
+    width: 0;
+    height: 3.5em;
+    font-size: 1em;
+  }
+  .input-wrapper .input-img {
+    width: 2em;
+    height: 2em;
+  }
+  .active {
+    width: 30em;
+  }
+  .list-item {
+    font-size: 1.25em;
+  }
+}
