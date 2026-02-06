@@ -30,4 +30,4 @@ This project was created based on a Frontend Mentor [https://www.frontendmentor.
 - Refactor the code into smaller functions for better readability
 
 ## 🍿 Video
-
+https://github.com/user-attachments/assets/0d868815-6afb-425a-b849-5debca923956
